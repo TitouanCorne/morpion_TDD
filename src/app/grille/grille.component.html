@@ -1,0 +1,11 @@
+<div class="grille">
+    <div *ngFor="let row of [0, 1, 2]; let i = index" class="row">
+        <app-case
+          *ngFor="let j of [0, 1, 2]; let jIndex = index"
+          [currentPlayer]="currentPlayer"
+          (askToChangePlayer)="changePlayer($event)"
+          [id]="i + '.' + jIndex"
+        ></app-case>
+    </div>
+    <p class="info"> Au tour de {{currentPlayer}} de jouer</p>
+</div>
