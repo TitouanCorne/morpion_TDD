@@ -1,0 +1,28 @@
+.case {
+  width: 100px;
+  height: 100px;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.case:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+.case:active {
+  background-color: #d0d0d0;
+  transform: scale(0.95);
+}
+
+.case:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

@@ -1,0 +1,45 @@
+.grille {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.info {
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+.restart {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.restart:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.restart:active {
+  background-color: #004085;
+  transform: scale(0.95);
+}
+
+.restart:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
